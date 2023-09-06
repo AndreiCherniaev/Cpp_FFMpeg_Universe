@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.26.4) #3.1 also ok
 
 set(CMAKE_BUILD_TYPE Debug)
 
-project(QT_FFMpeg_example LANGUAGES CXX C)
+project(myExample LANGUAGES CXX C)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)

@@ -11,18 +11,18 @@ Build steps:
 ```bash
 echo ${MyBaseDir} #check path
 cd ${MyBaseDir}
-cmake -S Qt_FFMpeg/src/ -B Qt_FFMpeg/build-host/ --fresh
+cmake -S myExample/src/ -B myExample/build-host/ --fresh
 ```
 
 ## Result
-When Qt_FFMpeg/src/CMakeLists.txt use
+When myExample/src/CMakeLists.txt use
 ```bash
 #set(CMAKE_PREFIX_PATH ${pkgconfig_path}) #makes "A required package was not found"
 set(ENV{PKG_CONFIG_PATH} ${pkgconfig_path}) #ok
 ```
 then you should get ok result like this
 ```bash
-~/Cpp_FFMpeg_Universe$ cmake -S Qt_FFMpeg/src/ -B Qt_FFMpeg/build-host/ --fresh
+~/Cpp_FFMpeg_Universe$ cmake -S myExample/src/ -B myExample/build-host/ --fresh
 -- The CXX compiler identification is GNU 11.4.0
 -- The C compiler identification is GNU 11.4.0
 -- Detecting CXX compiler ABI info
@@ -41,7 +41,7 @@ I found /home/user/Cpp_FFMpeg_Universe/FFMpeg_themself/ffmpeg_build/lib/pkgconfi
 --   Found libavcodec, version 60.25.100
 -- Configuring done (0.2s)
 -- Generating done (0.0s)
--- Build files have been written to: /home/user/Cpp_FFMpeg_Universe/Qt_FFMpeg/build-host
+-- Build files have been written to: /home/user/Cpp_FFMpeg_Universe/myExample/build-host
 ```
 But if you use
 ```bash
