@@ -19,8 +19,6 @@ export PKG_CONFIG_PATH="${MyBaseDir}/FFMpeg_themself/ffmpeg_build/lib/pkgconfig/
 cmake -DPKG_CONFIG_USE_CMAKE_PREFIX_PATH=TRUE -DCMAKE_PREFIX_PATH=${MyBaseDir}/FFMpeg_themself/ffmpeg_build/lib/pkgconfig/ -S Qt_FFMpeg/src/ -B Qt_FFMpeg/build-host/
 ```
 
-I found /home/a/Downloads/myGitHub/QT_FFMpeg_Universe/FFMpeg_themself/ffmpeg_build/lib/pkgconfig/
-
 ## Result
 When Qt_FFMpeg/src/CMakeLists.txt use
 ```bash
