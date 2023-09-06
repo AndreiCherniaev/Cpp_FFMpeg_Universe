@@ -7,13 +7,15 @@ project(myExample LANGUAGES CXX C)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-cmake_path(SET pkgconfig_path "${CMAKE_CURRENT_LIST_DIR}/../../FFMpeg_themself/ffmpeg_build/lib/pkgconfig/" NORMALIZE)
+# With Environment Variables
+#cmake_path(SET pkgconfig_path "${CMAKE_CURRENT_LIST_DIR}/../../FFMpeg_themself/ffmpeg_build/lib/pkgconfig/" NORMALIZE)
+#set(ENV{PKG_CONFIG_PATH} ${pkgconfig_path})
+#message("I found $ENV{PKG_CONFIG_PATH}")
 
-#use one string, comment another
-#set(CMAKE_PREFIX_PATH ${pkgconfig_path}) #makes "A required package was not found"
-set(ENV{PKG_CONFIG_PATH} ${pkgconfig_path}) #ok
-
-message("I found $ENV{PKG_CONFIG_PATH}")
+# Without Environment Variables
+cmake_path(SET pkgconfig_path "${CMAKE_CURRENT_LIST_DIR}/../../FFMpeg_themself/ffmpeg_build/" NORMALIZE)
+set(CMAKE_PREFIX_PATH ${pkgconfig_path})
+message("I found ${CMAKE_PREFIX_PATH}")
 
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(LIBAV REQUIRED IMPORTED_TARGET
