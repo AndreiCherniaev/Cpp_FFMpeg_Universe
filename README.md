@@ -3,7 +3,7 @@ This is C++ project that using libavcodec (FFMpeg), build system is cmake.
 Tested on Ubuntu 22 x86_64.
 Prepare and [build](https://trac.ffmpeg.org/wiki/CompilationGuide/Ubuntu#FFmpeg) FFMpeg
 ```bash
-git clone https://github.com/AndreiCherniaev/Cpp_FFMpeg_Universe.git && MyBaseDir=${PWD}/Cpp_FFMpeg_Universe cd Cpp_FFMpeg_Universe
+git clone https://github.com/AndreiCherniaev/Cpp_FFMpeg_Universe.git && MyBaseDir=${PWD}/Cpp_FFMpeg_Universe && cd Cpp_FFMpeg_Universe
 chmod +x FFMpeg_themself/build_FFMpeg.sh
 FFMpeg_themself/build_FFMpeg.sh
 ```
