@@ -4,6 +4,9 @@ build-cross/
 FFMpeg_themself/build
 FFMpeg_themself/build_artifacts
 
+FFMpeg_themself/ffmpeg_build/
+FFMpeg_themself/bin/
+
 # C++ objects and libs
 *.slo
 *.lo
