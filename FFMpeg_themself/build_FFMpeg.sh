@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#cd QT_FFMpeg_Universe/
+#cd Cpp_FFMpeg_Universe/
 export MyBaseDir=${PWD}
 mkdir -p FFMpeg_themself
 rm -Rf ${MyBaseDir}/FFMpeg_themself/ffmpeg_build ${MyBaseDir}/FFMpeg_themself/bin && mkdir ${MyBaseDir}/FFMpeg_themself/ffmpeg_build ${MyBaseDir}/FFMpeg_themself/bin

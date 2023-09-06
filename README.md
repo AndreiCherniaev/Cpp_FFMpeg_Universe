@@ -3,7 +3,7 @@ This is C++ project that using FFMpeg, build system is cmake.
 Tested on Ubuntu 22 x86_64.
 Prepare and [build](https://trac.ffmpeg.org/wiki/CompilationGuide/Ubuntu#FFmpeg) FFMpeg
 ```bash
-git clone https://github.com/AndreiCherniaev/QT_FFMpeg_Universe.git && MyBaseDir=${PWD}/QT_FFMpeg_Universe cd QT_FFMpeg_Universe
+git clone https://github.com/AndreiCherniaev/Cpp_FFMpeg_Universe.git && MyBaseDir=${PWD}/Cpp_FFMpeg_Universe cd Cpp_FFMpeg_Universe
 chmod +x FFMpeg_themself/build_FFMpeg.sh
 FFMpeg_themself/build_FFMpeg.sh
 ```
@@ -27,7 +27,7 @@ set(ENV{PKG_CONFIG_PATH} ${pkgconfig_path}) #ok
 ```
 then you should get ok result like this
 ```bash
-~/QT_FFMpeg_Universe$ cmake -S Qt_FFMpeg/src/ -B Qt_FFMpeg/build-host/ --fresh
+~/Cpp_FFMpeg_Universe$ cmake -S Qt_FFMpeg/src/ -B Qt_FFMpeg/build-host/ --fresh
 -- The CXX compiler identification is GNU 11.4.0
 -- The C compiler identification is GNU 11.4.0
 -- Detecting CXX compiler ABI info
@@ -40,13 +40,13 @@ then you should get ok result like this
 -- Check for working C compiler: /usr/bin/cc - skipped
 -- Detecting C compile features
 -- Detecting C compile features - done
-I found /home/user/QT_FFMpeg_Universe/FFMpeg_themself/ffmpeg_build/lib/pkgconfig/
+I found /home/user/Cpp_FFMpeg_Universe/FFMpeg_themself/ffmpeg_build/lib/pkgconfig/
 -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
 -- Checking for module 'libavcodec'
 --   Found libavcodec, version 60.25.100
 -- Configuring done (0.2s)
 -- Generating done (0.0s)
--- Build files have been written to: /home/user/QT_FFMpeg_Universe/Qt_FFMpeg/build-host
+-- Build files have been written to: /home/user/Cpp_FFMpeg_Universe/Qt_FFMpeg/build-host
 ```
 But if you use
 ```bash
