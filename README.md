@@ -61,9 +61,9 @@ I found
 -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
 -- Checking for module 'libavcodec'
 --   No package 'libavcodec' found
-CMake Error at /home/a/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.26/Modules/FindPkgConfig.cmake:607 (message):
+CMake Error at /home/user/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.26/Modules/FindPkgConfig.cmake:607 (message):
   A required package was not found
 Call Stack (most recent call first):
-  /home/a/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.26/Modules/FindPkgConfig.cmake:829 (_pkg_check_modules_internal)
+  /home/user/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.26/Modules/FindPkgConfig.cmake:829 (_pkg_check_modules_internal)
   CMakeLists.txt:19 (pkg_check_modules)
 ```
