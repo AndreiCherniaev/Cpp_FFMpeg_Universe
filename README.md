@@ -16,6 +16,7 @@ cmake -S myExample/src/ -B myExample/build-host/ --fresh
 
 ## Result
 Problem I describe below already fixed by commit fbc9dcb89ae5554f9852a54628b313f6998621e9  
+
 When myExample/src/CMakeLists.txt use
 ```bash
 #set(CMAKE_PREFIX_PATH ${pkgconfig_path}) #makes "A required package was not found"
