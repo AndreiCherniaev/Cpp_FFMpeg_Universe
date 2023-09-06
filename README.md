@@ -1,6 +1,6 @@
 This is C++ project that using FFMpeg, build system is cmake. 
 ## How build
-
+Tested on Ubuntu 22 x86_64.
 Prepare and [build](https://trac.ffmpeg.org/wiki/CompilationGuide/Ubuntu#FFmpeg) FFMpeg
 ```bash
 git clone https://github.com/AndreiCherniaev/QT_FFMpeg_Universe.git && MyBaseDir=${PWD}/QT_FFMpeg_Universe cd QT_FFMpeg_Universe
