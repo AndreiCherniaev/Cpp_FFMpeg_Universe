@@ -15,10 +15,13 @@ cmake -S myExample/src/ -B myExample/build-host/ --fresh
 ```
 
 ## Result
-Problem I describe below already fixed by commit fbc9dcb89ae5554f9852a54628b313f6998621e9  
-
-When myExample/src/CMakeLists.txt use
-```bash
+Problem I describe below is already fixed by commit fbc9dcb89ae5554f9852a54628b313f6998621e9  
+File myExample/src/CMakeLists.txt contains
+```cmake
+cmake_path(SET pkgconfig_path "${CMAKE_CURRENT_LIST_DIR}/../../FFMpeg_themself/ffmpeg_build/lib/pkgconfig/" NORMALIZE)
+```
+If you use "With Environment Variables" case
+```cmake
 #set(CMAKE_PREFIX_PATH ${pkgconfig_path}) #makes "A required package was not found"
 set(ENV{PKG_CONFIG_PATH} ${pkgconfig_path}) #ok
 ```
@@ -45,8 +48,8 @@ I found /home/user/Cpp_libavcodec_Universe/FFMpeg_themself/ffmpeg_build/lib/pkgc
 -- Generating done (0.0s)
 -- Build files have been written to: /home/user/Cpp_libavcodec_Universe/myExample/build-host
 ```
-But if you use
-```bash
+But if you use "Without Environment Variables" case
+```cmake
 set(CMAKE_PREFIX_PATH ${pkgconfig_path}) #makes "A required package was not found"
 #set(ENV{PKG_CONFIG_PATH} ${pkgconfig_path}) #ok
 ```
