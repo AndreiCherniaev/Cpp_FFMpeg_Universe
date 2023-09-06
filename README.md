@@ -6,7 +6,12 @@
 2) FFMpeg_themself/build_FFMpeg.sh
 3
 ```cpp
+cmake -S Qt_FFMpeg/src/ -B Qt_FFMpeg/build-host/ --fresh
+```
+OR
+```cpp
+echo ${MyBaseDir} #check path
 cd ${MyBaseDir}
-export PKG_CONFIG_PATH="/home/a/Downloads/myGitHub/QT_FFMpeg_Universe/FFMpeg_themself/ffmpeg_build/lib/pkgconfig/"
+export PKG_CONFIG_PATH="${MyBaseDir}/FFMpeg_themself/ffmpeg_build/lib/pkgconfig/"
 cmake -DPKG_CONFIG_USE_CMAKE_PREFIX_PATH=TRUE -DCMAKE_PREFIX_PATH=${MyBaseDir}/FFMpeg_themself/ffmpeg_build/lib/pkgconfig/ -S Qt_FFMpeg/src/ -B Qt_FFMpeg/build-host/
 ```
