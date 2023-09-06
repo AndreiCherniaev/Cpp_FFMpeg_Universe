@@ -1,3 +1,9 @@
+build-host/
+build-cross/
+
+FFMpeg_themself/build
+FFMpeg_themself/build_artifacts
+
 # C++ objects and libs
 *.slo
 *.lo
