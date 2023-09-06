@@ -20,10 +20,11 @@ PATH="${MyBaseDir}/FFMpeg_themself/bin:$PATH" PKG_CONFIG_PATH="${MyBaseDir}/FFMp
   --disable-static \
   --disable-ffplay \
   --disable-ffprobe \
+  --disable-ffmpeg \
   --disable-swresample \
   --disable-decoders \
   --disable-doc \
   --disable-encoders \
-  --enable-encoder=mjpeg
+  --enable-encoder=libopenh264
 PATH="${MyBaseDir}/FFMpeg_themself/bin:$PATH" make -j16
 make install

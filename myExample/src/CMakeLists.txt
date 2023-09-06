@@ -25,3 +25,5 @@ pkg_check_modules(LIBAV REQUIRED IMPORTED_TARGET
 add_executable(${PROJECT_NAME}
     main.cpp
 )
+
+target_link_libraries(${PROJECT_NAME} PUBLIC PkgConfig::LIBAV)
