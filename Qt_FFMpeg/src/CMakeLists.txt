@@ -13,7 +13,7 @@ cmake_path(SET pkgconfig_path "${CMAKE_CURRENT_LIST_DIR}/../../FFMpeg_themself/f
 #set(CMAKE_PREFIX_PATH ${pkgconfig_path}) #makes "A required package was not found"
 set(ENV{PKG_CONFIG_PATH} ${pkgconfig_path}) #ok
 
-message("hello from $ENV{PKG_CONFIG_PATH}")
+message("I found $ENV{PKG_CONFIG_PATH}")
 
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(LIBAV REQUIRED IMPORTED_TARGET
